@@ -89,11 +89,11 @@ div.campo > i {
 div.campo > input {
     font-size: 1em;
     width: calc(100% - 44.4px); /* Função calc permite calcular quanto de largura ou altura um item deve ter podendo utilizar o tamanho de outros elementos na mesma caixa para acertar o tamanho. */
-    transform: translateY(-13px);
     height: 100%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-13px); /* Sempre que houver alguma animação ou transição entre os elementos, sempre utilize o transform como último elemento. */
 }
 
 div.campo > input:focus-within {
