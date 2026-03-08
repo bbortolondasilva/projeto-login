@@ -66,16 +66,38 @@ div#formulario > p {
 }
 
 form > div.campo {
-    background-color: #1d1d1d;
+    border: 2px solid black;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > i {
+    color: rgb(0, 0, 0);
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    font-size: 1em;
+    width: calc(100% - 44.4px); /* Função calc permite calcular quanto de largura ou altura um item deve ter podendo utilizar o tamanho de outros elementos na mesma caixa para acertar o tamanho. */
+    transform: translateY(-13px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within {
+    background-color: rgb(216, 216, 216);
 }
 
 form > input[type=submit] {
